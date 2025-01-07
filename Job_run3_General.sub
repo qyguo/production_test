@@ -1,0 +1,18 @@
+universe = vanilla
+Executable = /afs/cern.ch/work/q/qguo/check6/Job_run3_General.sh
+should_transfer_files = YES
+Transfer_Input_Files = /afs/cern.ch/work/q/qguo/check6/Job_run3_General.sh
+Proxy_path = /afs/cern.ch/user/q/qguo/proxy/x509up_u96770
+arguments = $(input_name) $(CMSSW_used) $(step_name) $(Proxy_path) $(ClusterID) $(ProcId)
+Output = /afs/cern.ch/work/q/qguo/check6/Jobs/$(input_name)_$(ClusterId)_$(ProcId).out
+Error = /afs/cern.ch/work/q/qguo/check6/Jobs/$(input_name)_$(ClusterId)_$(ProcId).err
+Log = /afs/cern.ch/work/q/qguo/check6/Jobs/$(input_name)_$(ClusterId)_$(ProcId).log
+request_cpus = 2
++JobFlavour = "tomorrow"
+MY.WantOS = "el7"
+CMSSW_used = CMSSW_10_6_17_patch1
+step_name = SIM
+input_name = WmToZpTotau2munu_M20_20UL18wmLHEGEN_3
+Queue
+input_name = WmToZpTotau2munu_M20_20UL18wmLHEGEN_4
+Queue

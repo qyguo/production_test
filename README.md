@@ -100,6 +100,6 @@ cmsDriver.py  --python_filename ${SampleName}_NanoAODv9_cfg.py --eventcontent NA
 
 
 ######Based on the produced cfg file
-# run the Zp.sh please remember to change the name inside~
-# so that would generate the dir and cfg for the condor for seperate production
+run the Zp.sh please remember to change the name inside~
+so that would generate the dir and cfg for the condor for seperate production
 
